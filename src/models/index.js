@@ -1,11 +1,13 @@
 // src/models/index.js
 // This file ensures all models are registered with Mongoose
 
-require('./Tenant.model');
-require('./User.model');
+const tenent = require('./Tenant.model');
+const user = require('./User.model');
+const customer = require('./Customer.model');
 
 // Optional: Export them if you want to use elsewhere
 module.exports = {
-  Tenant: require('./Tenant.model'),
-  User: require('./User.model'),
+  Tenant: tenent,
+  User: user,
+  Customer: customer,
 };
